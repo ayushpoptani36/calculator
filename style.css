@@ -1,0 +1,91 @@
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   width:100vh;
+    height:100vh;
+}
+.calculator{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width:50vh;
+    min-height:70vh;
+    width:50%;
+    height:70%;
+    flex:0 0 50%;}
+.display{
+    padding:10px;
+    gap:10px;
+    background-image: url('isometric-grid.svg');
+    display:flex;
+    flex:1 1 auto;
+    min-width: 92px;
+    min-height: 30px;
+    max-width: 700px;
+    max-height: 200px;
+    border: 1px solid black;
+    border-radius: 5%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.button_container{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.button_row{
+    flex:1 1 auto;
+    display:flex;
+    gap:10px;
+    justify-content: space-between;
+}
+.button{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing:border-box;
+    flex:1 1 auto;
+    border:1px solid black;
+    min-height:20px;
+    min-width:20px;
+    width:23.5%;
+    border-radius: 15%;
+    transition:0.1s all ease;
+}
+#zero{
+    flex:2 1 auto;
+    width:49%;
+    min-height:20px;
+    min-width:20px;
+    box-sizing: border-box;
+}
+.button:hover{
+    transform:scale(1.1);
+}
+
+.clicked{
+    transform:scale(0.9) !important;
+    pointer-events: none;
+}
+.result{
+    font-size: 48px;
+    font-weight: bold;
+    flex:1 1 auto;
+    max-height:50px;
+    margin-top:30px;
+}
+.expression{
+    font-size: 16px;
+    display: block;
+    width:100%;
+    text-align: end;
+    word-wrap: break-word;
+   
+}
