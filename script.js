@@ -103,6 +103,11 @@ function multiply(a,b){
     return a*b;
 }
 function divide(a,b){
+    if(b===0){
+        expression="Please don't try to crash me!"
+        result=8008735;
+        return result;
+    }
     return a/b;
 }
 
